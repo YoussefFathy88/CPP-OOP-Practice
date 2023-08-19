@@ -7,7 +7,7 @@
 
 #include "Matrix.h"
 
-explicit Matrix :: Matrix (const int32_t& row ,const int32_t& col): row(row),col(col){
+Matrix :: Matrix (const int32_t& row ,const int32_t& col): row(row),col(col){
 
 	M = new int* [col]; /* allocating the 2D array */
 
@@ -24,7 +24,7 @@ explicit Matrix :: Matrix (const int32_t& row ,const int32_t& col): row(row),col
 	printf("Parameterized constructor called called \n");
 }
 
-explicit Matrix :: Matrix (const Matrix& CopyMatrix):row(CopyMatrix.row),col(CopyMatrix.col){
+Matrix :: Matrix (const Matrix& CopyMatrix):row(CopyMatrix.row),col(CopyMatrix.col){
 	M = new int* [col]; /* allocating the 2D array */
 	for (int32_t i = 0; i < col; i++){
 		M[i] = new int[row];

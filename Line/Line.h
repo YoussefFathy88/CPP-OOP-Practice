@@ -8,16 +8,17 @@
 #ifndef LINE_H_
 #define LINE_H_
 #include "../Point/Point.h"
-
 class Line { /* y=mx+c */
 private:
 	Point p1;
 	Point p2;
+	double m;
+	double c;
 public:
-	Line();
+	explicit Line(const Point& p1, const Point& p2) ;
 	void print();
-	virtual ~Line();
-	Line(const Line &other);
+	Line operator+(double n);
+	Line(const Line& L1);
 };
 
 #endif /* LINE_H_ */

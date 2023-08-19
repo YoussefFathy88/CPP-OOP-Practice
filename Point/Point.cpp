@@ -7,17 +7,11 @@
 
 #include "Point.h"
 
-Point::Point() {
-	// TODO Auto-generated constructor stub
+Point::Point(int x , int y):x(x),y(y) {
+}
+Point::Point():x(0),y(0){
+
 
 }
 
-Point::~Point() {
-	// TODO Auto-generated destructor stub
-}
-
-Point::Point(const Point &other) {
-	// TODO Auto-generated constructor stub
-
-}
 
